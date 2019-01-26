@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "Maps Restaurant Scraper",
+	"description": "Scrapes Google Maps restaurant results",
+	"version": "1.0",
+	"author": "oberl.info",
+
+	"background": {
+		"scripts": ["popup.js"],
+		"persistent": true
+	},
+
+	"permissions": [
+        "tabs",
+        "http://www.google.com/maps/search/*",
+        "https://www.google.com/maps/search/*"
+    ],
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	}
+}
